@@ -1,8 +1,8 @@
-GET http://localhost:8000/
+GET http://localhost:8000/user
 
 ###
 
-POST http://localhost:8000/
+POST http://localhost:8000/user
 content-type:application/json
 
 {
@@ -14,15 +14,15 @@ content-type:application/json
 
 ###
 
-GET http://localhost:8000/3
+GET http://localhost:8000/user/1
 
 ###
 
-DELETE http://localhost:8000/4
+DELETE http://localhost:8000/user/id
 
 ###
 
-PATCH http://localhost:8000/1
+PATCH http://localhost:8000/user/id
 Content-Type: application/json
 
 {

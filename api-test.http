@@ -1,0 +1,34 @@
+GET http://localhost:8000/
+
+###
+
+POST http://localhost:8000/
+content-type:application/json
+
+{
+    "name": "Tsogt Binderiya",
+    "email": "binderiyatsogthers@gmail.com",
+    "number": "00000000",
+    "address": ""
+}
+
+###
+
+GET http://localhost:8000/3
+
+###
+
+DELETE http://localhost:8000/4
+
+###
+
+PATCH http://localhost:8000/1
+Content-Type: application/json
+
+{
+    "name": "Altankhuyag Javkhlant",
+    "email": "enrosek95@gmail.com",
+    "number": 88916562,
+    "address": "Crystal Town"
+}
+

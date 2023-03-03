@@ -1,5 +1,4 @@
 import express from "express";
-import pool from "../config/mysql-config.js";
 import {
   createUser,
   deleteUser,
@@ -12,7 +11,11 @@ const router = express.Router();
 
 // getAll
 router.get("/", async (req, res) => {
-  res.json(await getUser());
+  try {
+    res.json(await getUser());
+  } catch (error) {
+    res.status(400).json("Someting went wrong");
+  }
 });
 
 //getOne

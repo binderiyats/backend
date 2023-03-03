@@ -1,3 +1,5 @@
+# USER_TABLE
+
 GET http://localhost:8000/user
 
 ###
@@ -13,15 +15,12 @@ content-type:application/json
 }
 
 ###
-
 GET http://localhost:8000/user/1
 
 ###
-
 DELETE http://localhost:8000/user/id
 
 ###
-
 PATCH http://localhost:8000/user/id
 Content-Type: application/json
 
@@ -31,4 +30,50 @@ Content-Type: application/json
     "number": 88916562,
     "address": "Crystal Town"
 }
+###
+
+# CATEGORY_TABLE
+
+GET http://localhost:8000/category
+
+###
+GET http://localhost:8000/category/3
+
+
+
+###
+POST http://localhost:8000/category
+Content-Type: application/json
+
+{
+    "name":"Accessories",
+    "slug":"accessories",
+    "imageUrl":"",
+    "productCount":1
+}
+
+### 
+DELETE http://localhost:8000/category/3
+
+###
+PATCH http://localhost:8000/category/4
+Content-Type: application/json
+
+{
+    "name":"Hat",
+    "slug":"hat",
+    "imageUrl":"",
+    "productCount":1
+}
+###
+
+# PRODUCT_TABLE
+GET http://localhost:8000/product
+
+###
+GET http://localhost:8000/product/1
+
+###
+POST http://localhost:8000/product
+Content-Type: application/json
 

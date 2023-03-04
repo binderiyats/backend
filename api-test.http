@@ -83,3 +83,15 @@ Content-Type: application/json
     "price":2650
 }
 
+###
+DELETE http://localhost:8000/product/2
+
+###
+PATCH http://localhost:8000/product/3
+Content-Type: application/json
+
+{
+    "name":"Gucci Princetown Crocodile Slipper with Double G",
+    "description":"",
+    "price":2600
+}

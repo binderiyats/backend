@@ -77,3 +77,9 @@ GET http://localhost:8000/product/1
 POST http://localhost:8000/product
 Content-Type: application/json
 
+{
+    "name":"Gucci Princetown Crocodile Slipper with Double G",
+    "description":"",
+    "price":2650
+}
+

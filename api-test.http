@@ -3,19 +3,22 @@
 GET http://localhost:8000/user
 
 ###
-
 POST http://localhost:8000/user
 content-type:application/json
 
 {
-    "name": "Tsogt Binderiya",
-    "email": "binderiyatsogthers@gmail.com",
-    "number": "00000000",
-    "address": ""
+    "firstName": "Binderiya",
+    "lastName":"Tsogt",
+    "birthDate":"2000-03-05",
+    "email": "binderiytsogthers@gmail.com",
+    "phone": "1111112",
+    "password": "",
+    "imageUrl":""
+
 }
 
 ###
-GET http://localhost:8000/user/1
+GET http://localhost:8000/user/
 
 ###
 DELETE http://localhost:8000/user/id

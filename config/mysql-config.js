@@ -4,7 +4,7 @@ const pool = createPool({
   user: "root",
   port: 3306,
   password: "",
-  database: "ecommerce",
+  database: "green",
 }).promise();
 
 export default pool;
